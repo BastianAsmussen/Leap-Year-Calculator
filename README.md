@@ -1,4 +1,4 @@
-# Skudårs-Udregner
+# Skudårs Udregner
 
 **(Danish)**
 Dette er en skudårs udregner!
