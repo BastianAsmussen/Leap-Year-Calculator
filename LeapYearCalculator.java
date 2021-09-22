@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class LeapYearCalculator {
 
     public static boolean isLeapYear(int year) {
+        
         boolean value = false;
 
         if (year >= 1 && year <= 9999) {
@@ -17,7 +18,9 @@ public class LeapYearCalculator {
                     if (year % 400 == 0) {
                         value = true;
                     }
+                    
                 } else {
+                    
                     value = true;
                 }
             }
@@ -32,7 +35,9 @@ public class LeapYearCalculator {
         Scanner reader = new Scanner(System.in);
 
         int convertedInput = -1;
+        
         while (yearDefiner == true) {
+            
             System.out.println("Hvilket år vil du gerne vide var et skudår?");
             String userInput = reader.nextLine();
 
@@ -49,10 +54,13 @@ public class LeapYearCalculator {
         boolean value = isLeapYear(year);
 
         String returnValue;
+        
         if(value == true) {
+            
             returnValue = "Året " + year + " er et skudår!";
 
         } else {
+            
             returnValue = "Året " + year + " er ikke et skudår!";
         }
 
