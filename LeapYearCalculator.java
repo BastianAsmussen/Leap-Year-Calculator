@@ -1,4 +1,4 @@
-package dev.asmussen;
+package tech.asmussen;
 
 import java.io.IOException;
 import java.util.Scanner;
