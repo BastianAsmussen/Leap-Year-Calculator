@@ -11,7 +11,7 @@ public class Main {
 
         if (args.length > 0) {
 
-             debugMode = (args[0] != null) && (args[0].equalsIgnoreCase("debug"));
+             debugMode = args[0].equalsIgnoreCase("debug");
         }
 
 
@@ -35,10 +35,10 @@ public class Main {
 
             final long START_TIME = System.currentTimeMillis();
 
-            int year = Integer.parseInt(input);
-            boolean isLeapYear = calculator.isLeapYear(year);
+            final int YEAR = Integer.parseInt(input);
+            final boolean IS_LEAP_YEAR = calculator.isLeapYear(YEAR);
 
-            System.out.println("Year " + DECIMAL_FORMAT.format(year) + ((isLeapYear) ? " is " : " isn't ") + "a leap year!");
+            System.out.println("Year " + DECIMAL_FORMAT.format(YEAR) + ((IS_LEAP_YEAR) ? " is " : " isn't ") + "a leap year!");
 
             if (debugMode) {
 
