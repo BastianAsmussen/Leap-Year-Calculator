@@ -13,8 +13,7 @@ public class Main {
 
              debugMode = args[0].equalsIgnoreCase("debug");
         }
-
-
+        
         final Calculator CALCULATOR = new Calculator();
 
         final Scanner SCANNER = new Scanner(System.in);
