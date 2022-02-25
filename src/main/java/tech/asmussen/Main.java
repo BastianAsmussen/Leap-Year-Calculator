@@ -15,28 +15,28 @@ public class Main {
         }
 
 
-        Calculator calculator = new Calculator();
+        final Calculator CALCULATOR = new Calculator();
 
-        Scanner scanner = new Scanner(System.in);
+        final Scanner SCANNER = new Scanner(System.in);
 
         String input = "";
 
         while (!input.equalsIgnoreCase("exit")) {
 
             System.out.print("What year do you want to know is a leap year? ");
-            input = scanner.nextLine();
+            input = SCANNER.nextLine();
 
             if (input.equalsIgnoreCase("exit")) {
 
                 break;
             }
 
-            final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("###,###,###");
-
             final long START_TIME = System.currentTimeMillis();
 
+            final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("###,###,###");
+
             final int YEAR = Integer.parseInt(input);
-            final boolean IS_LEAP_YEAR = calculator.isLeapYear(YEAR);
+            final boolean IS_LEAP_YEAR = CALCULATOR.isLeapYear(YEAR);
 
             System.out.println("Year " + DECIMAL_FORMAT.format(YEAR) + ((IS_LEAP_YEAR) ? " is " : " isn't ") + "a leap year!");
 
