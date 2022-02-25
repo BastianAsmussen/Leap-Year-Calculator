@@ -1,8 +1,2 @@
-# Skudårs Udregner
-
-**(Danish)**
-Dette er en skudårs udregner!
-
-Lavet af Bastian Asmussen som et test projekt. Dette er skrevet i programmeringssproget Java.
-
-- Bastian.
+# Leap Year Calculator
+This is a leap year calculator made in the programming language Java.
